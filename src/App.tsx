@@ -1,15 +1,26 @@
 import React from "react";
-import ProgressBar from "./ProgressBar";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
+import ProgressBar from "../components/ProgressBar";
 import "./App.css";
+import ProgressBarContainer from "./containers/ProgressBarContainer";
+import ComponentNavigator from "./containers/ComponentNavigator";
+import FileExplorerContainer from "./containers/FileExplorerContainer";
 
 const App = () => {
-  const bars = [0, 4, 10, 20, 40, 50, 60, 80, 100];
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-      {bars.map((_perc, index) => {
-        return <ProgressBar key={index} progress={_perc} />;
-      })}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/ProgressBar" element={<ProgressBarContainer />} />
+        <Route path="/FileExplorer" element={<FileExplorerContainer />} />
+        <Route path="/" element={<ComponentNavigator />} />
+      </Routes>
+    </Router>
   );
 };
 
