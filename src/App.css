@@ -11,3 +11,10 @@
   padding: 1px;
   transition: 0.5s ease-in;
 }
+
+
+.container {
+  /* max-width: 200px; */
+  text-align: left;
+  padding-left: 20px;
+}
