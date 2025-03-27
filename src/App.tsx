@@ -11,6 +11,8 @@ import "./App.css";
 import ProgressBarContainer from "./containers/ProgressBarContainer";
 import ComponentNavigator from "./containers/ComponentNavigator";
 import FileExplorerContainer from "./containers/FileExplorerContainer";
+import OtpInputContainer from "./containers/OtpInputContainer";
+import StepperContainer from "./containers/StepperContainer";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
       <Routes>
         <Route path="/ProgressBar" element={<ProgressBarContainer />} />
         <Route path="/FileExplorer" element={<FileExplorerContainer />} />
+        <Route path="/OtpInput" element={<OtpInputContainer />} />
+        <Route path="/StepperComponent" element={<StepperContainer />} />
         <Route path="/" element={<ComponentNavigator />} />
       </Routes>
     </Router>
