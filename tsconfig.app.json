@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "components/ProgressBar.tsx"]
+  "include": ["src", "src/components/ProgressBar.tsx"]
 }

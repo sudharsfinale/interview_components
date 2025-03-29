@@ -1,5 +1,5 @@
 import React from "react";
-import ProgressBar from "../../components/ProgressBar";
+import ProgressBar from "../components/ProgressBar";
 
 const ProgressBarContainer = () => {
   const bars = [0, 4, 10, 20, 40, 50, 60, 80, 100];

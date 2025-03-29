@@ -1,5 +1,5 @@
 import React from "react";
-import FileExplorer from "../../components/FileExplorer";
+import FileExplorer from "../components/FileExplorer";
 import folderData from "../../data.json";
 const FileExplorerContainer = () => {
   return (
