@@ -6,7 +6,7 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import ProgressBar from "../components/ProgressBar";
+import ProgressBar from "./components/ProgressBar";
 import "./App.css";
 import ProgressBarContainer from "./containers/ProgressBarContainer";
 import ComponentNavigator from "./containers/ComponentNavigator";

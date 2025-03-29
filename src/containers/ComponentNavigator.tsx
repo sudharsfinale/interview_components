@@ -1,10 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { AVAILABLE_PATHS } from "../constants/constants";
 
 const ComponentNavigator = () => {
   const navigate = useNavigate();
   //components_done should match their routeName
-  let components_done = ["ProgressBar", "FileExplorer"];
+  let components_done = [
+    AVAILABLE_PATHS.PROGRESS_BAR,
+    AVAILABLE_PATHS.FILE_EXPLORER,
+    AVAILABLE_PATHS.STEPPER,
+    AVAILABLE_PATHS.OTP_INPUT,
+  ];
   const navigateToComponent = (componentName: any) => {
     navigate(`/${componentName}`);
   };
